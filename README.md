@@ -19,7 +19,7 @@ This script basically encapsulates what the wonderful library of [Twython](https
 
 ---
 
-#Installation:
+# Installation:
 
 1. Clone the repository to your local machine
 2. Create an application so you can obtain your api keys and authentication keys on [Apps Twitter](https://apps.twitter.com/)
