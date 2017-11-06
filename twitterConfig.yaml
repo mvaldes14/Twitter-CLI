@@ -1,0 +1,7 @@
+--- # Twitter API Credentials
+Twitter_API:
+    CONSUMER_KEY: ''
+    CONSUMER_SECRET: ''
+    AUTH_TOKEN: ''
+    AUTH_SECRET: ''
+
