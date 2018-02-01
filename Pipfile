@@ -1,0 +1,25 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+twython = "==3.6.0"
+pyyaml = "*"
+
+
+[dev-packages]
+
+pytest = "*"
+pytest-mock = "*"
+pylint = "*"
+"autopep8" = "*"
+tox = "*"
+
+
+[requires]
+
+python_version = "3.6"

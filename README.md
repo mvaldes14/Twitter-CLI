@@ -1,46 +1,47 @@
-# Twitter CLI Client #
-### Tweet, Search or Stream from your command line ###
+# Twitter CLI Client
+
+### Tweet, Search or Stream from your command line
 
 This script basically encapsulates what the wonderful library of [Twython](https://github.com/ryanmcgrath/twython) can do, so big props to the creator.
 
-## Screenshots ##
+## Screenshots
 
 1. Tweeting
 
-![tweeting](tweet.png)
+![tweeting](./images/tweet.png)
 
 2. Searching
 
-![searching](searching.png)
+![searching](./images/searching.png)
 
 3. Streaming
 
-![streaming](stream.png)
+![streaming](./images/stream.png)
 
 ---
 
-#Installation:
+# Installation:
 
 1. Clone the repository to your local machine
 2. Create an application so you can obtain your api keys and authentication keys on [Apps Twitter](https://apps.twitter.com/)
-3. Modify the ``twitterConfig.yaml`` file with your appropriate keys. File found inside your cloned repo.
+3. Modify the `twitterConfig.yaml` file with your appropriate keys. File found inside your cloned repo.
 
-        --- # Twitter API Credentials
-        Twitter_API:
-            CONSUMER_KEY: 'YOUR KEY GOES HERE'
-            CONSUMER_SECRET: 'YOUR KEY GOES HERE'
-            AUTH_TOKEN: 'YOUR KEY GOES HERE'
-            AUTH_SECRET: 'YOUR KEY GOES HERE'
+       --- # Twitter API Credentials
+       Twitter_API:
+           CONSUMER_KEY: 'YOUR KEY GOES HERE'
+           CONSUMER_SECRET: 'YOUR KEY GOES HERE'
+           AUTH_TOKEN: 'YOUR KEY GOES HERE'
+           AUTH_SECRET: 'YOUR KEY GOES HERE'
 
 4. Add execution permission to the script
 
-        chmod +x twitter.py
+       chmod +x twitter_cli.py
 
 5. Familiarize yourself with the script options by running:
 
-        ./twitter.py -h
+       ./twitter.py -h
 
->It should display:
+> It should display:
 
         usage: twitter.py [-h] [-u UPDATE] [-s SEARCH] [-t STREAM]
 
@@ -56,22 +57,23 @@ This script basically encapsulates what the wonderful library of [Twython](https
 
 # Usage:
 
-### To tweet - Run: ###
+### To tweet - Run:
 
         ./twitter.py -u "Your tweet here"
 
-### To search - Run: ###
+### To search - Run:
 
         ./twitter.py -s "Your search string"
 
-### To start the stream - Run: ###
+### To start the stream - Run:
 
         ./twitter.py -t "Your stream item"
 
 ---
+
 # TODO:
 
-- TODO: Add options to tweet with media
-- TODO: Put stream class on a separate file
-- TODO: Create this as a subprocess so it doesn't stop the application.
-- TODO Add options to save to file in parser
+* TODO: Add options to tweet with media
+* TODO: Put stream class on a separate file
+* TODO: Create this as a subprocess so it doesn't stop the application.
+* TODO Add options to save to file in parser
