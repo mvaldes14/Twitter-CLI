@@ -1,6 +1,7 @@
 import argparse
 import sys
-from helpers import twitter_tweet
+from .helpers import twitter_search
+
 
 # CLI Interface
 def create_parser():
@@ -36,9 +37,10 @@ def main():
         print("Starting Streaming process for: " + args.stream)
         twitter_stream(args.stream)
 
-    else:
+    elif args is None:
         print('Argument not accepted')
         sys.exit(1)
+
 
 # Run
 if __name__ == "__main__":

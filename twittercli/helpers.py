@@ -1,7 +1,8 @@
 from twython import Twython
 from twython import TwythonStreamer
 from pprint import pprint
-from config import CONSUMER_KEY, CONSUMER_SECRET, AUTH_TOKEN, AUTH_SECRET
+from .config import CONSUMER_KEY, CONSUMER_SECRET, AUTH_TOKEN, AUTH_SECRET
+
 
 # API
 twitter = Twython(CONSUMER_KEY, CONSUMER_SECRET, AUTH_TOKEN, AUTH_SECRET)

@@ -7,7 +7,7 @@ name = "pypi"
 
 [packages]
 
-twython = "==3.6.0"
+twython = "*"
 pyyaml = "*"
 
 
@@ -16,7 +16,6 @@ pyyaml = "*"
 pytest = "*"
 pytest-mock = "*"
 pylint = "*"
-"autopep8" = "*"
 tox = "*"
 
 

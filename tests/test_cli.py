@@ -1,8 +1,9 @@
 import pytest
 import sys
-sys.path.insert(0, '/mnt/Projects/twittercli/')
+sys.path.insert(0,'/mnt/Projects/twittercli')
+print(sys.path)
 
-from app import cli
+from twittercli import cli
 
 
 @pytest.fixture()
@@ -26,7 +27,8 @@ def test_parser_with_invalid_argument(parser):
     with pytest.raises(SystemExit):
         parser.parse_args(['-w'])
 
+
 def test_parser_with_one_option_one_arg(parser):
-     parser.parse_args(['-t test'])
-     parser.parse_args(['-u test'])
-     parser.parse_args(['-s test'])
+    parser.parse_args(['-t test'])
+    parser.parse_args(['-u test'])
+    parser.parse_args(['-s test'])
