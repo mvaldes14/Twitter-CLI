@@ -1,8 +1,4 @@
 import pytest
-import sys
-sys.path.insert(0,'/mnt/Projects/twittercli')
-print(sys.path)
-
 from twittercli import cli
 
 
@@ -13,7 +9,9 @@ def parser():
 
 
 def test_parser_no_args(parser):
-    parser.parse_args([])
+    with pytest.raises(SystemExit):
+        print(parser.parse_args([]))
+
 
 
 def test_parser_with_one_option_no_arg(parser):
@@ -29,6 +27,6 @@ def test_parser_with_invalid_argument(parser):
 
 
 def test_parser_with_one_option_one_arg(parser):
-    parser.parse_args(['-t test'])
-    parser.parse_args(['-u test'])
-    parser.parse_args(['-s test'])
+    assert parser.parse_args(['-u test'])
+    assert parser.parse_args(['-s test'])
+    assert parser.parse_args(['-t test'])

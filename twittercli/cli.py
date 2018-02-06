@@ -1,6 +1,6 @@
 import argparse
 import sys
-from .helpers import twitter_search
+from .helpers import twitter_search, twitter_tweet, twitter_stream
 
 
 # CLI Interface
@@ -20,7 +20,7 @@ def create_parser():
 def main():
     parser = create_parser()
     args = parser.parse_args()
-    if len(sys.argv) == 1:
+    if len(sys.argv) <= 1:
         print("No arguments provided")
         sys.exit(1)
 

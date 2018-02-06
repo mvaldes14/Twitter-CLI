@@ -1,7 +1,7 @@
 {
   "python.pythonPath":
-    "/home/rorix/.local/share/virtualenvs/twittercli-0cZc8gNy/bin/python",
-  "python.unitTest.pyTestArgs": ["tests", "-v"],
+    "C:\\Users\\m.valdes.revilla\\.virtualenvs\\Twitter-CLI-UaW1ABna\\Scripts",
+  "python.unitTest.pyTestArgs": ["tests", "-v", "-s"],
   "python.unitTest.pyTestEnabled": true,
   "python.linting.pylintEnabled": true,
   "python.unitTest.unittestEnabled": false,
