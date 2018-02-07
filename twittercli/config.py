@@ -1,10 +1,9 @@
 import yaml
 import os
 
-config_file = os.path.dirname(os.path.dirname(__file__))
-print(__file__)
 # Configuration from YAML
-with open(os.path.join(config_file,'twitterConfig.yaml')) as f:
+config_file = os.path.dirname(os.path.dirname(__file__))
+with open(os.path.join(config_file, 'twitterConfig.yaml')) as f:
     config = yaml.load(f)
 
 # Keys

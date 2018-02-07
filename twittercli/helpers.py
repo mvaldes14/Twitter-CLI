@@ -17,10 +17,8 @@ def twitter_search(query):
     result_query = [str("Tweet:" + str(i) + "->" + search_query['statuses'][i]['text']).splitlines()
                     for i in range(len(search_query['statuses']))]
     pprint(result_query)
-
 # TODO: Save the results to a file if the user wants it.
 
-# TODO Add options to save to file
 
 
 # Update
@@ -30,7 +28,6 @@ def twitter_tweet(update):
     Does not support media like pictures/videos"""
     twitter.update_status(status=update)
     return "Tweet Sent"
-
 # TODO: Add options to tweet with media
 
 
@@ -39,7 +36,7 @@ def twitter_tweet(update):
 class MyStreamer(TwythonStreamer):
     def on_success(self, data):
         if 'text' in data:
-            print(data['text'].encode('utf-8'))
+            print(data['text']+"\n")
 
     def on_error(self, status_code, data):
         print(status_code)

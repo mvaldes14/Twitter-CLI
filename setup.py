@@ -7,9 +7,13 @@ with open('README.md') as f:
 
 setup(
     name='Twitter CLI Client',
+    description='Twitter CLI Client',
     version='0.1.0',
     author='Miguel Valdes',
     author_email='elxilote@gmail.com',
-    description='Twitter CLI Client',
-    packages=find_packages()
+    packages=find_packages('twittercli'),
+    entry_points="""
+        [console_scripts]
+        twcli=twittercli.cli:main
+        """
 )

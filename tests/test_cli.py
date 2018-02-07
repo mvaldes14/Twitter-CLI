@@ -9,9 +9,7 @@ def parser():
 
 
 def test_parser_no_args(parser):
-    with pytest.raises(SystemExit):
-        print(parser.parse_args([]))
-
+    assert parser.parse_args([])
 
 
 def test_parser_with_one_option_no_arg(parser):

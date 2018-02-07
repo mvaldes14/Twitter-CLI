@@ -17,6 +17,7 @@ pytest = "*"
 pytest-mock = "*"
 pylint = "*"
 tox = "*"
+"autopep8" = "*"
 
 
 [requires]
