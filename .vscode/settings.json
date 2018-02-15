@@ -1,11 +1,14 @@
 {
   "python.pythonPath":
     "C:\\Users\\m.valdes.revilla\\.virtualenvs\\Twitter-CLI-UaW1ABna\\Scripts",
-  "python.unitTest.pyTestArgs": ["tests"],
+  "python.unitTest.pyTestArgs": [
+    "tests"
+  ],
   "python.unitTest.pyTestEnabled": true,
   "python.linting.pylintEnabled": false,
   "python.unitTest.unittestEnabled": false,
   "python.unitTest.nosetestsEnabled": false,
   "python.linting.enabled": false,
-  "editor.parameterHints": false
+  "editor.parameterHints": false,
+  "editor.quickSuggestions": false
 }

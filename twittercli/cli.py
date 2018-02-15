@@ -45,6 +45,7 @@ def main():
     if args.search:
         sys.stdout.write("Searching for: " + args.search + "\n")
         twitter_search(args.search)
+        sys.stdout.write("Done")
 
     if args.stream:
         sys.stdout.write(
