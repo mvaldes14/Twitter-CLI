@@ -1,4 +1,5 @@
 # Twitter CLI Client
+[![Build Status](https://travis-ci.org/RorixRebel/Twitter-CLI.svg?branch=master)](https://travis-ci.org/RorixRebel/Twitter-CLI)
 
 ### Tweet, Search or Stream from your command line
 
@@ -40,6 +41,15 @@ This script basically encapsulates what the wonderful library of [Twython](https
 5. Familiarize yourself with the script options by running:
 
        ./twitter.py -h
+       
+6. Additionally you can install it locally if you want to play around with it by doing:
+
+       pip install -e .
+
+> It will use the `setup.py` file to install it locally so you can simply type `twcli` to get the same results.
+
+
+Once installed....
 
 > It should display:
 
@@ -60,16 +70,24 @@ This script basically encapsulates what the wonderful library of [Twython](https
 ### To tweet - Run:
 
         ./twitter.py -u "Your tweet here"
+        
+        twcli -u "Your tweet here"
 
 ### To search - Run:
 
         ./twitter.py -s "Your search string"
 
+        twcli -u "Your Tweet here"
+
 ### To start the stream - Run:
 
         ./twitter.py -t "Your stream item"
+       
+        twcli -t "Your stream item"
 
 ---
+
+
 
 # TODO:
 
