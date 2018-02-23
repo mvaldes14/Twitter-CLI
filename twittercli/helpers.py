@@ -18,7 +18,6 @@ def twitter_search(query):
     result_query = [str("Tweet:" + str(i) + "->" + search_query['statuses'][i]['text']).splitlines()
                     for i in range(len(search_query['statuses']))]
     pprint(result_query)
-    return True
 
 
 # TODO: Add options to tweet with media
@@ -28,7 +27,6 @@ def twitter_tweet(update):
     :update - String characters of what you want to Tweet
     Does not support media like pictures/videos"""
     twitter.update_status(status=update)
-    return True
 
 
 # Streaming Class Definition
@@ -55,4 +53,3 @@ def twitter_stream(query):
     :query - String character of what you want to search or track"""
     stream = MyStreamer(CONSUMER_KEY, CONSUMER_SECRET, AUTH_TOKEN, AUTH_SECRET)
     stream.statuses.filter(track=query)
-    return True

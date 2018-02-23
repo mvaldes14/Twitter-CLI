@@ -18,6 +18,7 @@ pytest-mock = "*"
 pylint = "*"
 tox = "*"
 "autopep8" = "*"
+coverage = "*"
 
 
 [requires]

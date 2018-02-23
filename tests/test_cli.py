@@ -12,11 +12,15 @@ def test_parser_no_args(parser):
     assert parser.parse_args([])
 
 
-def test_parser_with_one_option_no_arg(parser):
+@pytest.mark.parametrize('argument',[
+    '-t',
+    '-u',
+    '-s'
+])
+def test_parser_with_one_option_no_arg(parser, argument):
     with pytest.raises(SystemExit):
-        parser.parse_args(['-t'])
-        parser.parse_args(['-u'])
-        parser.parse_args(['-s'])
+        parser.parse_args([argument])
+        
 
 
 def test_parser_with_invalid_argument(parser):
@@ -24,7 +28,10 @@ def test_parser_with_invalid_argument(parser):
         parser.parse_args(['-w'])
 
 
-def test_parser_with_one_option_one_arg(parser):
-    assert parser.parse_args(['-u test'])
-    assert parser.parse_args(['-s test'])
-    assert parser.parse_args(['-t test'])
+@pytest.mark.parametrize('argument',[
+    '-t test',
+    '-u test',
+    '-s test'
+])
+def test_parser_with_one_option_one_arg(parser, argument):
+    assert parser.parse_args([argument])
